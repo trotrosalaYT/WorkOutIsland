@@ -103,20 +103,6 @@ buydna.TextWrapped = true
 
 UICorner_5.Parent = buydna
 
-autodecline.Name = "autodecline"
-autodecline.Parent = gui
-autodecline.BackgroundColor3 = Color3.fromRGB(188, 0, 3)
-autodecline.Position = UDim2.new(0.361878455, 0, 0.662538707, 0)
-autodecline.Size = UDim2.new(0, 200, 0, 50)
-autodecline.Font = Enum.Font.PatrickHand
-autodecline.Text = "Doesn't Work Yet"
-autodecline.TextColor3 = Color3.fromRGB(0, 0, 0)
-autodecline.TextScaled = true
-autodecline.TextSize = 14.000
-autodecline.TextWrapped = true
-
-UICorner_6.Parent = autodecline
-
 buyall.Name = "buyall"
 buyall.Parent = gui
 buyall.BackgroundColor3 = Color3.fromRGB(0, 179, 11)
