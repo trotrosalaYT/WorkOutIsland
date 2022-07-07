@@ -89,20 +89,6 @@ label.TextWrapped = true
 
 UICorner_4.Parent = label
 
-buydna.Name = "buydna"
-buydna.Parent = gui
-buydna.BackgroundColor3 = Color3.fromRGB(167, 170, 0)
-buydna.Position = UDim2.new(0.723756909, 0, 0.662538707, 0)
-buydna.Size = UDim2.new(0, 200, 0, 50)
-buydna.Font = Enum.Font.PatrickHand
-buydna.Text = "Buy Next DNA (soon)"
-buydna.TextColor3 = Color3.fromRGB(0, 0, 0)
-buydna.TextScaled = true
-buydna.TextSize = 14.000
-buydna.TextWrapped = true
-
-UICorner_5.Parent = buydna
-
 buyall.Name = "buyall"
 buyall.Parent = gui
 buyall.BackgroundColor3 = Color3.fromRGB(0, 179, 11)
