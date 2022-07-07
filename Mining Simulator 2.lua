@@ -300,26 +300,6 @@ mainframe.Visible = true
 
 UICorner_14.Parent = mainframe
 
-drill.Name = "drill"
-drill.Parent = mainframe
-drill.BackgroundColor3 = Color3.fromRGB(2, 221, 39)
-drill.Size = UDim2.new(0, 200, 0, 50)
-drill.Font = Enum.Font.PatrickHand
-drill.Text = "Always Equip Drill"
-drill.TextColor3 = Color3.fromRGB(0, 0, 0)
-drill.TextScaled = true
-drill.TextSize = 14.000
-drill.TextWrapped = true
-drill.MouseButton1Down:Connect(function()
-while wait(0.1) do
-	local A_1 = "Omega Scythe"
-	local Event = game:GetService("ReplicatedStorage").Events.SetToolHolding
-	Event:FireServer(A_1)
-	end)
-end)
-
-UICorner_15.Parent = drill
-
 infotab.Name = "infotab"
 infotab.Parent = gui
 infotab.BackgroundColor3 = Color3.fromRGB(214, 0, 3)
