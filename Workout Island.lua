@@ -129,14 +129,15 @@ shop.BackgroundColor3 = Color3.fromRGB(0, 158, 190)
 shop.Position = UDim2.new(0, 0, 0.662538707, 0)
 shop.Size = UDim2.new(0, 200, 0, 50)
 shop.Font = Enum.Font.PatrickHand
-shop.Text = "Tween To Shop (soon)"
+shop.Text = "Tween To Shop"
 shop.TextColor3 = Color3.fromRGB(0, 0, 0)
 shop.TextScaled = true
 shop.TextSize = 14.000
 shop.TextWrapped = true
 shop.MouseButton1Down:Connect(function()
-	local TweenToShop = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame == CFrame.new(193, 166, -123)
-	TweenToShop:Play()
+	local TS = game:GetService("TweenService")
+	local tween = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(193, 166, -123)})
+	tween:Play()
 end)
 
 
@@ -148,14 +149,15 @@ sell.BackgroundColor3 = Color3.fromRGB(79, 20, 197)
 sell.Position = UDim2.new(0, 0, 0.461300313, 0)
 sell.Size = UDim2.new(0, 200, 0, 50)
 sell.Font = Enum.Font.PatrickHand
-sell.Text = "Tween To Sell (soon)"
+sell.Text = "Tween To Sell"
 sell.TextColor3 = Color3.fromRGB(0, 0, 0)
 sell.TextScaled = true
 sell.TextSize = 14.000
 sell.TextWrapped = true
 sell.MouseButton1Down:Connect(function()
-	local TweenToSell = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame == CFrame.new(155, 166, 145)
-	TweenToSell:Play()
+	local TS = game:GetService("TweenService")
+	local tween = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(155, 166, 145)})
+	tween:Play()
 end)
 
 UICorner_9.Parent = sell
