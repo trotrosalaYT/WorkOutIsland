@@ -311,9 +311,11 @@ drill.TextScaled = true
 drill.TextSize = 14.000
 drill.TextWrapped = true
 drill.MouseButton1Down:Connect(function()
+while wait(0.1) do
 	local A_1 = "Omega Scythe"
 	local Event = game:GetService("ReplicatedStorage").Events.SetToolHolding
 	Event:FireServer(A_1)
+	end)
 end)
 
 UICorner_15.Parent = drill
