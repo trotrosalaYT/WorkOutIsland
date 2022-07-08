@@ -12,64 +12,89 @@ local label = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local tptab = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local tpframe = Instance.new("Frame")
-local hidden = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local dephs = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local basin = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local core = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local world = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local cavern = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local shop = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local sell = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
 local maintab = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local mainframe = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local ownerlabel = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local discord = Instance.new("TextLabel")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local tag = Instance.new("TextLabel")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local label_2 = Instance.new("TextLabel")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local infotab = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local infoframe = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local infolabel = Instance.new("TextLabel")
 local autoegg = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local eggframe = Instance.new("ScrollingFrame")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local basic = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local spotted = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local forest = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local exotic = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local arctic = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local ice = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local dark = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local volcanic = Instance.new("TextButton")
-local UICorner_30 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local underworld = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local crystal = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local space = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local slime = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local nebula = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local cyborg = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local glitch = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local holo = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local tpframe = Instance.new("ScrollingFrame")
+local basin = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local cavern = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
+local core = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local dephs = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local hidden = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local sell = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local shop = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local world = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local cybershop = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local cybersell = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
+local sewers = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local abyss = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local cybercore = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local chasm = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
 
 --Properties:
 
@@ -82,8 +107,8 @@ gui.Parent = miningsim
 gui.BackgroundColor3 = Color3.fromRGB(48, 0, 203)
 gui.Position = UDim2.new(0.270455748, 0, 0.116279073, 0)
 gui.Size = UDim2.new(0, 724, 0, 323)
-gui.Visible = true
 gui.Active = true
+gui.Visible = true
 gui.Draggable = true
 
 UICorner.Parent = gui
@@ -135,167 +160,7 @@ tptab.MouseButton1Down:Connect(function()
 	eggframe.Visible = false
 end)
 
-
 UICorner_4.Parent = tptab
-
-tpframe.Name = "tpframe"
-tpframe.Parent = gui
-tpframe.BackgroundColor3 = Color3.fromRGB(48, 0, 203)
-tpframe.Position = UDim2.new(0.276243091, 0, 0.154798761, 0)
-tpframe.Size = UDim2.new(0, 524, 0, 223)
-tpframe.Visible = false
-
-hidden.Name = "hidden"
-hidden.Parent = tpframe
-hidden.BackgroundColor3 = Color3.fromRGB(225, 225, 6)
-hidden.Position = UDim2.new(-0.00190839171, 0, -0.00896861032, 0)
-hidden.Size = UDim2.new(0, 200, 0, 50)
-hidden.Font = Enum.Font.PatrickHand
-hidden.Text = "TP To Hidden Treasure"
-hidden.TextColor3 = Color3.fromRGB(0, 0, 0)
-hidden.TextScaled = true
-hidden.TextSize = 14.000
-hidden.TextWrapped = true
-hidden.MouseButton1Down:Connect(function()
-	local A_1 = "Hidden Treasure"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_5.Parent = hidden
-
-dephs.Name = "dephs"
-dephs.Parent = tpframe
-dephs.BackgroundColor3 = Color3.fromRGB(4, 171, 186)
-dephs.Position = UDim2.new(0.618320584, 0, -0.0044843033, 0)
-dephs.Size = UDim2.new(0, 200, 0, 50)
-dephs.Font = Enum.Font.PatrickHand
-dephs.Text = "TP To Frozen Dephs"
-dephs.TextColor3 = Color3.fromRGB(0, 0, 0)
-dephs.TextScaled = true
-dephs.TextSize = 14.000
-dephs.TextWrapped = true
-dephs.MouseButton1Down:Connect(function()
-	local A_1 = "Frozen Depths"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_6.Parent = dephs
-
-basin.Name = "basin"
-basin.Parent = tpframe
-basin.BackgroundColor3 = Color3.fromRGB(12, 214, 19)
-basin.Position = UDim2.new(5.96046448e-08, 0, 0.219730943, 0)
-basin.Size = UDim2.new(0, 200, 0, 50)
-basin.Font = Enum.Font.PatrickHand
-basin.Text = "TP To Gloomy Basin"
-basin.TextColor3 = Color3.fromRGB(0, 0, 0)
-basin.TextScaled = true
-basin.TextSize = 14.000
-basin.TextWrapped = true
-basin.MouseButton1Down:Connect(function()
-	local A_1 = "Gloomy Basin"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_7.Parent = basin
-
-core.Name = "core"
-core.Parent = tpframe
-core.BackgroundColor3 = Color3.fromRGB(255, 131, 29)
-core.Position = UDim2.new(-0.00190839171, 0, 0.443946153, 0)
-core.Size = UDim2.new(0, 200, 0, 50)
-core.Font = Enum.Font.PatrickHand
-core.Text = "TP To Molten Core"
-core.TextColor3 = Color3.fromRGB(0, 0, 0)
-core.TextScaled = true
-core.TextSize = 14.000
-core.TextWrapped = true
-core.MouseButton1Down:Connect(function()
-	local A_1 = "Molten Core"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_8.Parent = core
-
-world.Name = "world"
-world.Parent = tpframe
-world.BackgroundColor3 = Color3.fromRGB(135, 0, 202)
-world.Position = UDim2.new(0.618320584, 0, 0.219730884, 0)
-world.Size = UDim2.new(0, 200, 0, 50)
-world.Font = Enum.Font.PatrickHand
-world.Text = "TP To The Underworld"
-world.TextColor3 = Color3.fromRGB(0, 0, 0)
-world.TextScaled = true
-world.TextSize = 14.000
-world.TextWrapped = true
-world.MouseButton1Down:Connect(function()
-	local A_1 = "The Underworld"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_9.Parent = world
-
-cavern.Name = "cavern"
-cavern.Parent = tpframe
-cavern.BackgroundColor3 = Color3.fromRGB(35, 6, 255)
-cavern.Position = UDim2.new(0.616412222, 0, 0.443946153, 0)
-cavern.Size = UDim2.new(0, 200, 0, 50)
-cavern.Font = Enum.Font.PatrickHand
-cavern.Text = "TP To Crystal Cavern"
-cavern.TextColor3 = Color3.fromRGB(0, 0, 0)
-cavern.TextScaled = true
-cavern.TextSize = 14.000
-cavern.TextWrapped = true
-cavern.MouseButton1Down:Connect(function()
-	local A_1 = "Crystal Cavern"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_10.Parent = cavern
-
-shop.Name = "shop"
-shop.Parent = tpframe
-shop.BackgroundColor3 = Color3.fromRGB(181, 24, 186)
-shop.Position = UDim2.new(0.00190836191, 0, 0.663677156, 0)
-shop.Size = UDim2.new(0, 200, 0, 50)
-shop.Font = Enum.Font.PatrickHand
-shop.Text = "TP To Shop"
-shop.TextColor3 = Color3.fromRGB(0, 0, 0)
-shop.TextScaled = true
-shop.TextSize = 14.000
-shop.TextWrapped = true
-shop.MouseButton1Down:Connect(function()
-	local A_1 = "The Overworld SurfaceSell"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_11.Parent = shop
-
-sell.Name = "sell"
-sell.Parent = tpframe
-sell.BackgroundColor3 = Color3.fromRGB(42, 64, 186)
-sell.Position = UDim2.new(0.616412163, 0, 0.672645748, 0)
-sell.Size = UDim2.new(0, 200, 0, 50)
-sell.Font = Enum.Font.PatrickHand
-sell.Text = "TP To Sell"
-sell.TextColor3 = Color3.fromRGB(0, 0, 0)
-sell.TextScaled = true
-sell.TextSize = 14.000
-sell.TextWrapped = true
-sell.MouseButton1Down:Connect(function()
-	local A_1 = "The OverworldShop"
-	local Event = game:GetService("ReplicatedStorage").Events.Teleport
-	Event:FireServer(A_1)
-end)
-
-UICorner_12.Parent = sell
 
 maintab.Name = "main tab"
 maintab.Parent = gui
@@ -315,8 +180,7 @@ maintab.MouseButton1Down:Connect(function()
 	eggframe.Visible = false
 end)
 
-
-UICorner_13.Parent = maintab
+UICorner_5.Parent = maintab
 
 mainframe.Name = "mainframe"
 mainframe.Parent = gui
@@ -324,7 +188,7 @@ mainframe.BackgroundColor3 = Color3.fromRGB(48, 0, 203)
 mainframe.Position = UDim2.new(0.276243091, 0, 0.154798761, 0)
 mainframe.Size = UDim2.new(0, 524, 0, 223)
 
-UICorner_14.Parent = mainframe
+UICorner_6.Parent = mainframe
 
 ownerlabel.Name = "ownerlabel"
 ownerlabel.Parent = mainframe
@@ -337,7 +201,7 @@ ownerlabel.TextScaled = true
 ownerlabel.TextSize = 14.000
 ownerlabel.TextWrapped = true
 
-UICorner_15.Parent = ownerlabel
+UICorner_7.Parent = ownerlabel
 
 discord.Name = "discord"
 discord.Parent = mainframe
@@ -351,7 +215,7 @@ discord.TextScaled = true
 discord.TextSize = 14.000
 discord.TextWrapped = true
 
-UICorner_16.Parent = discord
+UICorner_8.Parent = discord
 
 tag.Name = "tag"
 tag.Parent = mainframe
@@ -365,7 +229,7 @@ tag.TextScaled = true
 tag.TextSize = 14.000
 tag.TextWrapped = true
 
-UICorner_17.Parent = tag
+UICorner_9.Parent = tag
 
 label_2.Name = "label"
 label_2.Parent = mainframe
@@ -379,7 +243,7 @@ label_2.TextScaled = true
 label_2.TextSize = 14.000
 label_2.TextWrapped = true
 
-UICorner_18.Parent = label_2
+UICorner_10.Parent = label_2
 
 infotab.Name = "infotab"
 infotab.Parent = gui
@@ -399,7 +263,7 @@ infotab.MouseButton1Down:Connect(function()
 	eggframe.Visible = false
 end)
 
-UICorner_19.Parent = infotab
+UICorner_11.Parent = infotab
 
 infoframe.Name = "infoframe"
 infoframe.Parent = gui
@@ -408,7 +272,7 @@ infoframe.Position = UDim2.new(0.274861872, 0, 0.154798761, 0)
 infoframe.Size = UDim2.new(0, 525, 0, 223)
 infoframe.Visible = false
 
-UICorner_20.Parent = infoframe
+UICorner_12.Parent = infoframe
 
 infolabel.Name = "infolabel"
 infolabel.Parent = infoframe
@@ -441,17 +305,17 @@ autoegg.MouseButton1Down:Connect(function()
 	eggframe.Visible = true
 end)
 
-UICorner_21.Parent = autoegg
+UICorner_13.Parent = autoegg
 
 eggframe.Name = "eggframe"
 eggframe.Parent = gui
 eggframe.Active = true
 eggframe.BackgroundColor3 = Color3.fromRGB(48, 0, 203)
 eggframe.Position = UDim2.new(0.276243091, 0, 0.154798761, 0)
-eggframe.Size = UDim2.new(0, 524, 0, 223)
+eggframe.Size = UDim2.new(0, 524, 0, 273)
 eggframe.Visible = false
 
-UICorner_22.Parent = eggframe
+UICorner_14.Parent = eggframe
 
 basic.Name = "basic"
 basic.Parent = eggframe
@@ -469,7 +333,7 @@ basic.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_23.Parent = basic
+UICorner_15.Parent = basic
 
 spotted.Name = "spotted"
 spotted.Parent = eggframe
@@ -488,7 +352,7 @@ spotted.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_24.Parent = spotted
+UICorner_16.Parent = spotted
 
 forest.Name = "forest"
 forest.Parent = eggframe
@@ -507,7 +371,7 @@ forest.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_25.Parent = forest
+UICorner_17.Parent = forest
 
 exotic.Name = "exotic"
 exotic.Parent = eggframe
@@ -526,7 +390,7 @@ exotic.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_26.Parent = exotic
+UICorner_18.Parent = exotic
 
 arctic.Name = "arctic"
 arctic.Parent = eggframe
@@ -545,7 +409,7 @@ arctic.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_27.Parent = arctic
+UICorner_19.Parent = arctic
 
 ice.Name = "ice"
 ice.Parent = eggframe
@@ -564,7 +428,7 @@ ice.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_28.Parent = ice
+UICorner_20.Parent = ice
 
 dark.Name = "dark"
 dark.Parent = eggframe
@@ -583,7 +447,7 @@ dark.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_29.Parent = dark
+UICorner_21.Parent = dark
 
 volcanic.Name = "volcanic"
 volcanic.Parent = eggframe
@@ -602,7 +466,7 @@ volcanic.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_30.Parent = volcanic
+UICorner_22.Parent = volcanic
 
 underworld.Name = "underworld"
 underworld.Parent = eggframe
@@ -621,7 +485,7 @@ underworld.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_31.Parent = underworld
+UICorner_23.Parent = underworld
 
 crystal.Name = "crystal"
 crystal.Parent = eggframe
@@ -640,11 +504,403 @@ crystal.MouseButton1Down:Connect(function()
 	Event:FireServer(A_1)
 end)
 
-UICorner_32.Parent = crystal
+UICorner_24.Parent = crystal
+
+space.Name = "space"
+space.Parent = eggframe
+space.BackgroundColor3 = Color3.fromRGB(30, 0, 153)
+space.Position = UDim2.new(0, 0, 0.617647052, 0)
+space.Size = UDim2.new(0, 200, 0, 50)
+space.Font = Enum.Font.PatrickHand
+space.Text = "Space Egg"
+space.TextColor3 = Color3.fromRGB(0, 0, 0)
+space.TextScaled = true
+space.TextSize = 14.000
+space.TextWrapped = true
+space.MouseButton1Down:Connect(function()
+	local A_1 = "Space Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_25.Parent = space
+
+slime.Name = "slime"
+slime.Parent = eggframe
+slime.BackgroundColor3 = Color3.fromRGB(29, 199, 0)
+slime.Position = UDim2.new(0.5, 0, 0.617647052, 0)
+slime.Size = UDim2.new(0, 200, 0, 50)
+slime.Font = Enum.Font.PatrickHand
+slime.Text = "Slime Egg"
+slime.TextColor3 = Color3.fromRGB(0, 0, 0)
+slime.TextScaled = true
+slime.TextSize = 14.000
+slime.TextWrapped = true
+slime.MouseButton1Down:Connect(function()
+	local A_1 = "Slime Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_26.Parent = slime
+
+nebula.Name = "nebula"
+nebula.Parent = eggframe
+nebula.BackgroundColor3 = Color3.fromRGB(66, 13, 99)
+nebula.Position = UDim2.new(0, 0, 0.732198119, 0)
+nebula.Size = UDim2.new(0, 200, 0, 50)
+nebula.Font = Enum.Font.PatrickHand
+nebula.Text = "Nebula Egg"
+nebula.TextColor3 = Color3.fromRGB(0, 0, 0)
+nebula.TextScaled = true
+nebula.TextSize = 14.000
+nebula.TextWrapped = true
+nebula.MouseButton1Down:Connect(function()
+	local A_1 = "Nebula Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_27.Parent = nebula
+
+cyborg.Name = "cyborg"
+cyborg.Parent = eggframe
+cyborg.BackgroundColor3 = Color3.fromRGB(78, 141, 153)
+cyborg.Position = UDim2.new(0.5, 0, 0.732198119, 0)
+cyborg.Size = UDim2.new(0, 200, 0, 50)
+cyborg.Font = Enum.Font.PatrickHand
+cyborg.Text = "Cyborg Egg"
+cyborg.TextColor3 = Color3.fromRGB(0, 0, 0)
+cyborg.TextScaled = true
+cyborg.TextSize = 14.000
+cyborg.TextWrapped = true
+cyborg.MouseButton1Down:Connect(function()
+	local A_1 = "Cyborg Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_28.Parent = cyborg
+
+glitch.Name = "glitch"
+glitch.Parent = eggframe
+glitch.BackgroundColor3 = Color3.fromRGB(186, 10, 148)
+glitch.Position = UDim2.new(-0.00190838391, 0, 0.84210521, 0)
+glitch.Size = UDim2.new(0, 200, 0, 50)
+glitch.Font = Enum.Font.PatrickHand
+glitch.Text = "Glitched Egg"
+glitch.TextColor3 = Color3.fromRGB(0, 0, 0)
+glitch.TextScaled = true
+glitch.TextSize = 14.000
+glitch.TextWrapped = true
+glitch.MouseButton1Down:Connect(function()
+	local A_1 = "Glitched Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_29.Parent = glitch
+
+holo.Name = "holo"
+holo.Parent = eggframe
+holo.BackgroundColor3 = Color3.fromRGB(0, 210, 213)
+holo.Position = UDim2.new(0.5, 0, 0.840557218, 0)
+holo.Size = UDim2.new(0, 200, 0, 50)
+holo.Font = Enum.Font.PatrickHand
+holo.Text = "Holographic Egg"
+holo.TextColor3 = Color3.fromRGB(0, 0, 0)
+holo.TextScaled = true
+holo.TextSize = 14.000
+holo.TextWrapped = true
+holo.MouseButton1Down:Connect(function()
+	local A_1 = "Holographic Egg"
+	local Event = game:GetService("ReplicatedStorage").Events.OpenEgg
+	Event:FireServer(A_1)
+end)
+
+UICorner_30.Parent = holo
+
+tpframe.Name = "tpframe"
+tpframe.Parent = gui
+tpframe.Active = true
+tpframe.BackgroundColor3 = Color3.fromRGB(48, 0, 203)
+tpframe.Position = UDim2.new(0.276243091, 0, 0.151702791, 0)
+tpframe.Size = UDim2.new(0, 524, 0, 224)
+tpframe.Visible = false
+
+basin.Name = "basin"
+basin.Parent = tpframe
+basin.BackgroundColor3 = Color3.fromRGB(12, 214, 19)
+basin.Position = UDim2.new(5.96046448e-08, 0, 0.218182951, 0)
+basin.Size = UDim2.new(0, 200, 0, 50)
+basin.Font = Enum.Font.PatrickHand
+basin.Text = "TP To Gloomy Basin"
+basin.TextColor3 = Color3.fromRGB(0, 0, 0)
+basin.TextScaled = true
+basin.TextSize = 14.000
+basin.TextWrapped = true
+basin.MouseButton1Down:Connect(function()
+	local A_1 = "Gloomy Basin"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_31.Parent = basin
+
+cavern.Name = "cavern"
+cavern.Parent = tpframe
+cavern.BackgroundColor3 = Color3.fromRGB(35, 6, 255)
+cavern.Position = UDim2.new(0.5, 0, 0.374286711, 0)
+cavern.Size = UDim2.new(0, 200, 0, 50)
+cavern.Font = Enum.Font.PatrickHand
+cavern.Text = "TP To Crystal Cavern"
+cavern.TextColor3 = Color3.fromRGB(0, 0, 0)
+cavern.TextScaled = true
+cavern.TextSize = 14.000
+cavern.TextWrapped = true
+cavern.MouseButton1Down:Connect(function()
+	local A_1 = "Crystal Cavern"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_32.Parent = cavern
+
+core.Name = "core"
+core.Parent = tpframe
+core.BackgroundColor3 = Color3.fromRGB(255, 131, 29)
+core.Position = UDim2.new(0.00190840196, 0, 0.374286711, 0)
+core.Size = UDim2.new(0, 200, 0, 50)
+core.Font = Enum.Font.PatrickHand
+core.Text = "TP To Molten Core"
+core.TextColor3 = Color3.fromRGB(0, 0, 0)
+core.TextScaled = true
+core.TextSize = 14.000
+core.TextWrapped = true
+core.MouseButton1Down:Connect(function()
+	local A_1 = "Molten Core"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_33.Parent = core
+
+dephs.Name = "dephs"
+dephs.Parent = tpframe
+dephs.BackgroundColor3 = Color3.fromRGB(4, 171, 186)
+dephs.Position = UDim2.new(0.5, 0, 0.077559039, 0)
+dephs.Size = UDim2.new(0, 200, 0, 50)
+dephs.Font = Enum.Font.PatrickHand
+dephs.Text = "TP To Frozen Dephs"
+dephs.TextColor3 = Color3.fromRGB(0, 0, 0)
+dephs.TextScaled = true
+dephs.TextSize = 14.000
+dephs.TextWrapped = true
+dephs.MouseButton1Down:Connect(function()
+	local A_1 = "Frozen Depths"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_34.Parent = dephs
+
+hidden.Name = "hidden"
+hidden.Parent = tpframe
+hidden.BackgroundColor3 = Color3.fromRGB(225, 225, 6)
+hidden.Position = UDim2.new(0.00190840219, 0, 0.0761707127, 0)
+hidden.Size = UDim2.new(0, 200, 0, 50)
+hidden.Font = Enum.Font.PatrickHand
+hidden.Text = "TP To Hidden Treasure"
+hidden.TextColor3 = Color3.fromRGB(0, 0, 0)
+hidden.TextScaled = true
+hidden.TextSize = 14.000
+hidden.TextWrapped = true
+hidden.MouseButton1Down:Connect(function()
+	local A_1 = "Hidden Treasure"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_35.Parent = hidden
+
+sell.Name = "sell"
+sell.Parent = tpframe
+sell.BackgroundColor3 = Color3.fromRGB(42, 64, 186)
+sell.Position = UDim2.new(0.49999997, 0, 0.522490978, 0)
+sell.Size = UDim2.new(0, 200, 0, 50)
+sell.Font = Enum.Font.PatrickHand
+sell.Text = "TP To Sell"
+sell.TextColor3 = Color3.fromRGB(0, 0, 0)
+sell.TextScaled = true
+sell.TextSize = 14.000
+sell.TextWrapped = true
+sell.MouseButton1Down:Connect(function()
+	local A_1 = "The Overworld SurfaceSell"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_36.Parent = sell
+
+shop.Name = "shop"
+shop.Parent = tpframe
+shop.BackgroundColor3 = Color3.fromRGB(181, 24, 186)
+shop.Position = UDim2.new(-0.00190843199, 0, 0.519714355, 0)
+shop.Size = UDim2.new(0, 200, 0, 50)
+shop.Font = Enum.Font.PatrickHand
+shop.Text = "TP To Shop"
+shop.TextColor3 = Color3.fromRGB(0, 0, 0)
+shop.TextScaled = true
+shop.TextSize = 14.000
+shop.TextWrapped = true
+shop.MouseButton1Down:Connect(function()
+	local A_1 = "The OverworldShop"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_37.Parent = shop
+
+world.Name = "world"
+world.Parent = tpframe
+world.BackgroundColor3 = Color3.fromRGB(135, 0, 202)
+world.Position = UDim2.new(0.5, 0, 0.218182892, 0)
+world.Size = UDim2.new(0, 200, 0, 50)
+world.Font = Enum.Font.PatrickHand
+world.Text = "TP To The Underworld"
+world.TextColor3 = Color3.fromRGB(0, 0, 0)
+world.TextScaled = true
+world.TextSize = 14.000
+world.TextWrapped = true
+world.MouseButton1Down:Connect(function()
+	local A_1 = "The Underworld"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+
+UICorner_38.Parent = world
+
+cybershop.Name = "cybershop"
+cybershop.Parent = tpframe
+cybershop.BackgroundColor3 = Color3.fromRGB(104, 37, 186)
+cybershop.Position = UDim2.new(-0.00190843013, 0, 0.654389262, 0)
+cybershop.Size = UDim2.new(0, 200, 0, 50)
+cybershop.Font = Enum.Font.PatrickHand
+cybershop.Text = "TP To Cyber Shop"
+cybershop.TextColor3 = Color3.fromRGB(0, 0, 0)
+cybershop.TextScaled = true
+cybershop.TextSize = 14.000
+cybershop.TextWrapped = true
+cybershop.MouseButton1Down:Connect(function()
+	local A_1 = "Cyber GalaxyShop"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_39.Parent = cybershop
+
+cybersell.Name = "cybersell"
+cybersell.Parent = tpframe
+cybersell.BackgroundColor3 = Color3.fromRGB(2, 186, 180)
+cybersell.Position = UDim2.new(0.51145035, 0, 0.65406996, 0)
+cybersell.Size = UDim2.new(0, 200, 0, 50)
+cybersell.Font = Enum.Font.PatrickHand
+cybersell.Text = "TP To Cyber Sell"
+cybersell.TextColor3 = Color3.fromRGB(0, 0, 0)
+cybersell.TextScaled = true
+cybersell.TextSize = 14.000
+cybersell.TextWrapped = true
+cybersell.MouseButton1Down:Connect(function()
+	local A_1 = "Cyber Galaxy SurfaceSell"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_40.Parent = cybersell
+
+UICorner_41.Parent = tpframe
+
+sewers.Name = "sewers"
+sewers.Parent = tpframe
+sewers.BackgroundColor3 = Color3.fromRGB(19, 132, 0)
+sewers.Position = UDim2.new(0.00190836191, 0, 0.787516177, 0)
+sewers.Size = UDim2.new(0, 200, 0, 50)
+sewers.Font = Enum.Font.PatrickHand
+sewers.Text = "TP To Cyber Sewers"
+sewers.TextColor3 = Color3.fromRGB(0, 0, 0)
+sewers.TextScaled = true
+sewers.TextSize = 14.000
+sewers.TextWrapped = true
+sewers.MouseButton1Down:Connect(function()
+	local A_1 = "Cyber Sewers"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_42.Parent = sewers
+
+abyss.Name = "abyss"
+abyss.Parent = tpframe
+abyss.BackgroundColor3 = Color3.fromRGB(21, 0, 186)
+abyss.Position = UDim2.new(0.49999997, 0, 0.787516177, 0)
+abyss.Size = UDim2.new(0, 200, 0, 50)
+abyss.Font = Enum.Font.PatrickHand
+abyss.Text = "TP To Cosmic Abyss"
+abyss.TextColor3 = Color3.fromRGB(0, 0, 0)
+abyss.TextScaled = true
+abyss.TextSize = 14.000
+abyss.TextWrapped = true
+abyss.MouseButton1Down:Connect(function()
+	local A_1 = "Cosmic Abyss"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_43.Parent = abyss
+
+cybercore.Name = "cybercore"
+cybercore.Parent = tpframe
+cybercore.BackgroundColor3 = Color3.fromRGB(0, 72, 149)
+cybercore.Position = UDim2.new(-0.00190842152, 0, 0.922191143, 0)
+cybercore.Size = UDim2.new(0, 200, 0, 50)
+cybercore.Font = Enum.Font.PatrickHand
+cybercore.Text = "TP To Cyber Core"
+cybercore.TextColor3 = Color3.fromRGB(0, 0, 0)
+cybercore.TextScaled = true
+cybercore.TextSize = 14.000
+cybercore.TextWrapped = true
+cybercore.MouseButton1Down:Connect(function()
+	local A_1 = "Cyber Core"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+
+UICorner_44.Parent = cybercore
+
+chasm.Name = "chasm"
+chasm.Parent = tpframe
+chasm.BackgroundColor3 = Color3.fromRGB(186, 10, 148)
+chasm.Position = UDim2.new(0.49999997, 0, 0.922191143, 0)
+chasm.Size = UDim2.new(0, 200, 0, 50)
+chasm.Font = Enum.Font.PatrickHand
+chasm.Text = "TP To Glitched Chasm"
+chasm.TextColor3 = Color3.fromRGB(0, 0, 0)
+chasm.TextScaled = true
+chasm.TextSize = 14.000
+chasm.TextWrapped = true
+chasm.MouseButton1Down:Connect(function()
+	local A_1 = "Glitched Chasm"
+	local Event = game:GetService("ReplicatedStorage").Events.Teleport
+	Event:FireServer(A_1)
+end)
+
+UICorner_45.Parent = chasm
 
 -- Scripts:
 
-local function RNBUOAC_fake_script() -- gui.LocalScript 
+local function USRCRTX_fake_script() -- gui.LocalScript 
 	local script = Instance.new('LocalScript', gui)
 
 	local UIS = game:GetService("UserInputService")
@@ -656,4 +912,4 @@ local function RNBUOAC_fake_script() -- gui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RNBUOAC_fake_script)()
+coroutine.wrap(USRCRTX_fake_script)()
