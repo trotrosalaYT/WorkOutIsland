@@ -334,7 +334,7 @@ territory.TextSize = 14.000
 territory.TextWrapped = true
 territory.MouseButton1Down:Connect(function()
 	local TS = game:GetService("TweenService")
-	local tween = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-262, 179, 161)})
+	local tween = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-263, 153, 174)})
 	tween:Play()
 end)
 
