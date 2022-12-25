@@ -1,7 +1,8 @@
 local player = game.Players.LocalPlayer
-if  _G.Key = true then
+if  _G.Key == true then
 	print("Worked!")
-if _G.Key = false then
-	player:Kick("No Key Detected")
 end
-end)
+
+if _G.Key == false then
+		player:Kick("No Key Detected")
+end
