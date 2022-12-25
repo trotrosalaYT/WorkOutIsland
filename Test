@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
-if  _G.aijfjlge+AWfadjf-shg = true then
+if  _G.Key = true then
 	print("Worked!")
-if _G.aijfjlge+AWfadjf-shg = false then
+if _G.Key = false then
 	player:Kick("No Key Detected")
 end
 end)
