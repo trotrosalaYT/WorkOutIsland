@@ -1,8 +1,8 @@
-local player = game.Players.LocalPlayer
-if  _G.Key == true then
-	print("Worked!")
-end
+local plr = game.Players.LocalPlayer
+_G.Key = true
 
-if _G.Key == false then
-		player:Kick("No Key Detected")
+if _G.Key then
+	print("worked")
+else
+	plr:Kick("no key?")
 end
