@@ -1,7 +1,0 @@
-local plr = game.Players.LocalPlayer
-
-if _G.Key == true then
-	print("worked")
-else
-	plr:Kick("no key?")
-end
