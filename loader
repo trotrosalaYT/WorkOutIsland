@@ -1,0 +1,3 @@
+if game.PlaceId("4865990095") then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/trotrosalaYT/scripts/main/Power%20sim%202"))()
+end
