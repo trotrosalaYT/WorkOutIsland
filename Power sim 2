@@ -3,7 +3,7 @@ local Luminosity = loadstring(game:HttpGet("https://raw.githubusercontent.com/iH
 local Window = Luminosity.new("Trot Gui", "v1.0.0", 4370345701)
 
 local Tab1 = Window.Tab("Main", 6026568198)
-local Folder = Tab1.Folder("Auto Stat trains")
+local Folder = Tab1.Folder("Auto Stat trains", "Use these scripts at your own risk.")
 Folder.Switch("Auto Psychic", function(Status) 
 	if _G.Psychic == true then _G.Psychic = false else _G.Psychic = true end
 	if _G.Psychic == true then
