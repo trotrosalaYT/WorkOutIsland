@@ -16,4 +16,17 @@ channel:Toggle("Auto Mine BigCopperOre",function(bool)
 		Event:FireServer(A_1)
 	end
 end)
+channel:Button("Upgrade Pickaxe +1",function()
+	DiscordLib:Notification("Succesfully Updgraded Pickaxe","","Ok")
+	if _G.up1 == true then
+		_G.up1 = false
+	else
+		_G.up1 = true
+	end
+	while _G.up1 do
+		wait()
+		local Event = game:GetService("ReplicatedStorage").RemoteEvents.UpgradePickaxe
+		Event:FireServer()
+	end
+end)
 channel:Seperator()
