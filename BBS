@@ -3,19 +3,17 @@ local window = DiscordLib:Window("BBS GUI V6.9")
 local server = window:Server("Main Functions","")
 local channel = server:Channel("Mining Stuff")
 
-channel:Dropdown("Ores Options",{"BigCopperOre","Ore2","Ore3"},function(bool)
-	if {"BigCopperOre"} then
-		while {"BigCopperOre"} do
-			wait()
-			local A_1 = game:GetService("Workspace").Ores.BigCopperOre
-			local Event = game:GetService("ReplicatedStorage").RemoteEvents.Mine
-			Event:FireServer(A_1)
-		end
+channel:Button("Auto Mine BigCopperOre",function()
+	if _G.bco == true then
+		_G.bco = false
+	else
+		_G.bco = true
 	end
-	if {"Ore2"} then
-		while {"Ore2"} do
-			wait()
-		end
+	while _G.bco do
+		wait()
+		local A_1 = game:GetService("Workspace").Ores.BigCopperOre
+		local Event = game:GetService("ReplicatedStorage").RemoteEvents.Mine
+		Event:FireServer(A_1)
 	end
 end)
 channel:Seperator()
