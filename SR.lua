@@ -1,4 +1,5 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local DiscordLib = loadstring(
+    game:HttpGet "https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 local win = DiscordLib:Window("Sword Race")
 
@@ -75,7 +76,8 @@ buttons:Slider("Speed", 0, 200, 16, function(t)
 end)
 
 misc2:Button("Anti Afk", function()
-    DiscordLib:Notification("Successfully enabled AntiAfk","You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
+    DiscordLib:Notification("Successfully enabled AntiAfk",
+        "You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
     local ViUs = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         ViUs:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
@@ -164,6 +166,40 @@ ew2:Toggle("Auto Open Second Egg", false, function(bool)
         wait()
         local A_1 = "Hatch"
         local A_2 = "Draw006"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew3:Toggle("Auto Open First Egg", false, function(bool)
+    if bool == false then
+        _G.O6 = false
+    else
+        _G.O6 = true
+    end
+    while _G.O6 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw008"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew3:Seperator()
+
+ew3:Toggle("Auto Open Second Egg", false, function(bool)
+    if bool == false then
+        _G.O7 = false
+    else
+        _G.O7 = true
+    end
+    while _G.O7 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw009"
         local A_3 = {}
         local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
         Event:FireServer(A_1, A_2, A_3)
