@@ -75,6 +75,22 @@ buttons:Slider("Speed", 0, 200, 16, function(t)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
 
+misc:Bind("Visibility Toggle Bind", Enum.KeyCode.LeftAlt, function()
+    local gui = game.CoreGui.Discord.MainFrame
+    if gui.Visible == true then
+        gui.Visible = false
+    else
+        gui.Visible = true
+    end
+end)
+
+misc:Seperator()
+
+misc:Button("Destroy the UI", function()
+    local ScreenUI = game.CoreGui.Discord
+    ScreenUI:Destroy()
+end)
+
 misc2:Button("Anti Afk", function()
     DiscordLib:Notification("Successfully enabled AntiAfk",
         "You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
