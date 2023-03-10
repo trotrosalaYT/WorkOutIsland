@@ -16,6 +16,10 @@ local ew2 = eggs:Channel("World 2 Eggs")
 
 local ew3 = eggs:Channel("World 3 Eggs")
 
+local ew4 = eggs:Channel("World 4 Eggs")
+
+local ew5 = eggs:Channel("World 5 Eggs")
+
 local misc = SettingsTab:Channel("Settings/Binds")
 
 local misc2 = SettingsTab:Channel("Misc")
@@ -215,6 +219,74 @@ ew3:Toggle("Auto Open Second Egg", false, function(bool)
         wait()
         local A_1 = "Hatch"
         local A_2 = "Draw009"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew4:Toggle("Auto Open First Egg", false, function(bool)
+    if bool == false then
+        _G.O8 = false
+    else
+        _G.O8 = true
+    end
+    while _G.O8 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw011"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew4:Seperator()
+
+ew4:Toggle("Auto Open Second Egg", false, function(bool)
+    if bool == false then
+        _G.O9 = false
+    else
+        _G.O9 = true
+    end
+    while _G.O9 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw012"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew5:Toggle("Auto Open First Egg", false, function(bool)
+    if bool == false then
+        _G.O10 = false
+    else
+        _G.O10 = true
+    end
+    while _G.O10 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw014"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew5:Seperator()
+
+ew5:Toggle("Auto Open Second Egg", false, function(bool)
+    if bool == false then
+        _G.O11 = false
+    else
+        _G.O11 = true
+    end
+    while _G.O11 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw015"
         local A_3 = {}
         local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
         Event:FireServer(A_1, A_2, A_3)
