@@ -1,5 +1,4 @@
-local DiscordLib = loadstring(
-    game:HttpGet "https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 local win = DiscordLib:Window("Sword Race")
 
@@ -76,8 +75,7 @@ buttons:Slider("Speed", 0, 200, 16, function(t)
 end)
 
 misc2:Button("Anti Afk", function()
-    DiscordLib:Notification("Successfully enabled AntiAfk",
-        "You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
+    DiscordLib:Notification("Successfully enabled AntiAfk","You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
     local ViUs = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         ViUs:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
