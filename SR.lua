@@ -86,9 +86,20 @@ end)
 
 misc:Seperator()
 
-misc:Button("Destroy the UI", function()
-    local ScreenUI = game.CoreGui.Discord
-    ScreenUI:Destroy()
+misc:Bind("Anti Afk Bind", Enum.KeyCode.RightShift, function()
+    _G.t = false
+    if _G.t == false then
+        DiscordLib:Notification("Successfully enabled AntiAfk",
+            "You can now go afk for as long as you want, you wont disconnect from the afk kick", "Alright")
+        local ViUs = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+            ViUs:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+            wait(1)
+            ViUs:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+        end)
+    else
+        DiscordLib:Notification("Already enabled, no need to press again", "", "Alright")
+    end
 end)
 
 misc2:Button("Anti Afk", function()
