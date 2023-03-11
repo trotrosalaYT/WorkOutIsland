@@ -30,8 +30,20 @@ MainFunctions:AddButton({
     Callback = function()
         if _G.swing == true then
             _G.swing = false
+            OrionLib:MakeNotification({
+                Name = "Auto Swing disabled",
+                Content = "Click again to enable Auto Swing",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         else
             _G.swing = true
+            OrionLib:MakeNotification({
+                Name = "Auto Swing enabled",
+                Content = "Click again to disable Auto Swing",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         end
         while _G.swing do
             wait()
@@ -48,9 +60,21 @@ MainFunctions:AddButton({
         if _G.zoom == true then
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
             _G.zoom = false
+            OrionLib:MakeNotification({
+                Name = "God speed disabled",
+                Content = "Click again to enable God speed",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         else
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
             _G.zoom = true
+            OrionLib:MakeNotification({
+                Name = "God speed enabled",
+                Content = "Click again to disable God speed",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         end
         while _G.zoom do
             wait()
@@ -60,6 +84,21 @@ MainFunctions:AddButton({
             wait()
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
         end
+    end
+})
+
+MainFunctions:AddSlider({
+    Name = "Jump Power",
+    Min = 30,
+    Max = 250,
+    Default = 50,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 5,
+    ValueName = "JumpPower",
+    Save = true,
+    Flag = "JumpPower",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end
 })
 
@@ -88,8 +127,20 @@ SettingsSection:AddBind({
     Callback = function()
         if _G.swing == true then
             _G.swing = false
+            OrionLib:MakeNotification({
+                Name = "Auto Swing disabled",
+                Content = "Press " .. Enum.KeyCode.Name .. " again to enable Auto Swing",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         else
             _G.swing = true
+            OrionLib:MakeNotification({
+                Name = "Auto Swing enabled",
+                Content = "Press " .. Enum.KeyCode.Name .. " again to disable Auto Swing",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         end
         while _G.swing do
             wait()
@@ -108,9 +159,21 @@ SettingsSection:AddBind({
         if _G.zoom == true then
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
             _G.zoom = false
+            OrionLib:MakeNotification({
+                Name = "God speed disabled",
+                Content = "Press " .. Enum.KeyCode.Name .. " again to enable God speed",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         else
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
             _G.zoom = true
+            OrionLib:MakeNotification({
+                Name = "God speed enabled",
+                Content = "Press " .. Enum.KeyCode.Name .. "again to disable God speed",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
         end
         while _G.zoom do
             wait()
