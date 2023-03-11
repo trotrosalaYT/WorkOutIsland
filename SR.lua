@@ -427,7 +427,7 @@ end)
 
 ew6:Seperator()
 
-ew6:Toggle("Auto Open First Egg", false, function(bool)
+ew6:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O13 = true
         DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
