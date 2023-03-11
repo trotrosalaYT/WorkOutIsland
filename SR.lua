@@ -1,4 +1,5 @@
 _G.t = false
+_G.f = false
 local DiscordLib = loadstring(
     game:HttpGet "https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
@@ -19,6 +20,8 @@ local ew3 = eggs:Channel("World 3 Eggs")
 local ew4 = eggs:Channel("World 4 Eggs")
 
 local ew5 = eggs:Channel("World 5 Eggs")
+
+local ew6 = eggs:CHannel("World 6 Eggs")
 
 local misc = SettingsTab:Channel("Settings/Binds")
 
@@ -105,11 +108,18 @@ misc2:Button("Anti Afk", function()
     end
 end)
 
+misc2:Button("Give VIP Area Access", function()
+    if _G.f == false then
+        DiscordLib:Notification("Destroyed", "You can now enter the VIP Area", "Alright")
+        game.Workspace.WorldMain.VIP:Destroy()
+    end
+end)
+
 ew1:Toggle("Auto Open First Egg", false, function(bool)
-    if bool == false then
-        _G.O1 = false
-    else
+    if bool == true then
         _G.O1 = true
+    else
+        _G.O1 = false
     end
     while _G.O1 do
         wait()
@@ -124,10 +134,10 @@ end)
 ew1:Seperator()
 
 ew1:Toggle("Auto Open Second Egg", false, function(bool)
-    if bool == false then
-        _G.O2 = false
-    else
+    if bool == true then
         _G.O2 = true
+    else
+        _G.O2 = false
     end
     while _G.O2 do
         wait()
@@ -142,10 +152,10 @@ end)
 ew1:Seperator()
 
 ew1:Toggle("Auto Open Third Egg", false, function(bool)
-    if bool == false then
-        _G.O3 = false
-    else
+    if bool == true then
         _G.O3 = true
+    else
+        _G.O3 = false
     end
     while _G.O3 do
         wait()
@@ -158,10 +168,10 @@ ew1:Toggle("Auto Open Third Egg", false, function(bool)
 end)
 
 ew2:Toggle("Auto Open First Egg", false, function(bool)
-    if bool == false then
-        _G.O4 = false
-    else
+    if bool == true then
         _G.O4 = true
+    else
+        _G.O4 = false
     end
     while _G.O4 do
         wait()
@@ -176,10 +186,10 @@ end)
 ew2:Seperator()
 
 ew2:Toggle("Auto Open Second Egg", false, function(bool)
-    if bool == false then
-        _G.O5 = false
-    else
+    if bool == true then
         _G.O5 = true
+    else
+        _G.O5 = false
     end
     while _G.O5 do
         wait()
@@ -192,10 +202,10 @@ ew2:Toggle("Auto Open Second Egg", false, function(bool)
 end)
 
 ew3:Toggle("Auto Open First Egg", false, function(bool)
-    if bool == false then
-        _G.O6 = false
-    else
+    if bool == true then
         _G.O6 = true
+    else
+        _G.O6 = false
     end
     while _G.O6 do
         wait()
@@ -210,10 +220,10 @@ end)
 ew3:Seperator()
 
 ew3:Toggle("Auto Open Second Egg", false, function(bool)
-    if bool == false then
-        _G.O7 = false
-    else
+    if bool == true then
         _G.O7 = true
+    else
+        _G.O7 = false
     end
     while _G.O7 do
         wait()
@@ -226,10 +236,10 @@ ew3:Toggle("Auto Open Second Egg", false, function(bool)
 end)
 
 ew4:Toggle("Auto Open First Egg", false, function(bool)
-    if bool == false then
-        _G.O8 = false
-    else
+    if bool == true then
         _G.O8 = true
+    else
+        _G.O8 = false
     end
     while _G.O8 do
         wait()
@@ -244,10 +254,10 @@ end)
 ew4:Seperator()
 
 ew4:Toggle("Auto Open Second Egg", false, function(bool)
-    if bool == false then
-        _G.O9 = false
-    else
+    if bool == true then
         _G.O9 = true
+    else
+        _G.O9 = false
     end
     while _G.O9 do
         wait()
@@ -260,10 +270,10 @@ ew4:Toggle("Auto Open Second Egg", false, function(bool)
 end)
 
 ew5:Toggle("Auto Open First Egg", false, function(bool)
-    if bool == false then
-        _G.O10 = false
-    else
+    if bool == true then
         _G.O10 = true
+    else
+        _G.O10 = false
     end
     while _G.O10 do
         wait()
@@ -278,15 +288,49 @@ end)
 ew5:Seperator()
 
 ew5:Toggle("Auto Open Second Egg", false, function(bool)
-    if bool == false then
-        _G.O11 = false
-    else
+    if bool == true then
         _G.O11 = true
+    else
+        _G.O11 = false
     end
     while _G.O11 do
         wait()
         local A_1 = "Hatch"
         local A_2 = "Draw015"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew6:Toggle("Auto Open First Egg", false, function(bool)
+    if bool == true then
+        _G.O12 = true
+    else
+        _G.O12 = false
+    end
+    while _G.O12 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw017"
+        local A_3 = {}
+        local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
+        Event:FireServer(A_1, A_2, A_3)
+    end
+end)
+
+ew6:Seperator()
+
+ew6:Toggle("Auto Open First Egg", false, function(bool)
+    if bool == true then
+        _G.O13 = true
+    else
+        _G.O13 = false
+    end
+    while _G.O13 do
+        wait()
+        local A_1 = "Hatch"
+        local A_2 = "Draw018"
         local A_3 = {}
         local Event = game:GetService("ReplicatedStorage").Remotes["RE_Draw"]
         Event:FireServer(A_1, A_2, A_3)
@@ -336,6 +380,16 @@ tps:Button("Teleport to World 5", function()
     DiscordLib:Notification("Successfully teleported",
         "If this didn't teleport you, it's because you haven't unlocked the world yet", "Okay")
     local A_1 = "World005"
+    local Event = game:GetService("ReplicatedStorage").Remotes["RE_Teleport"]
+    Event:FireServer(A_1)
+end)
+
+tps:Seperator()
+
+tps:Button("Teleport to World 6", function()
+    DiscordLib:Notification("Successfully teleported",
+        "If this didn't teleport you, it's because you haven't unlocked the world yet", "Okay")
+    local A_1 = "World006"
     local Event = game:GetService("ReplicatedStorage").Remotes["RE_Teleport"]
     Event:FireServer(A_1)
 end)
