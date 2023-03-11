@@ -59,19 +59,20 @@ SettingsSection:AddButton({
 })
 
 SettingsSection:AddBind({
-    Name = "Toggle Visibility",
-    Default = Enum.KeyCode.LeftAlt,
+    Name = "Toggle Auto Swing",
+    Default = Enum.KeyCode.G,
     Save = true,
-    Flag = "VisibilityToggle",
+    Flag = "AutoSwingToggle",
     Callback = function()
-        local gui1 = game.CoreGui.Orion.Frame
-        local gui2 = game.CoreGui.Orion.Frame
-        if gui1.Visible == true and gui2.Visible == true then
-            gui1.Visible = false
-            gui2.Visible = false
+        if _G.swing == true then
+            _G.swing = false
         else
-            gui1.Visible = true
-            gui2.Visible = true
+            _G.swing = true
+        end
+        while _G.swing do
+            wait()
+            local Event = game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click
+            Event:InvokeServer()
         end
     end
 })
