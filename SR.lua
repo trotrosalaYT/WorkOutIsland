@@ -101,18 +101,6 @@ end)
 
 buttons:Seperator()
 
-buttons:Toggle("Noclip", false, function(bool)
-    if bool == true then
-        _G.Clip = true
-        DiscordLib:Notification("Enabled", "You can walk through walls now, amazing", "Alright")
-    else
-        _G.Clip = false
-        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
-    end
-end)
-
-buttons:Seperator()
-
 buttons:Slider("Speed", 0, 1000, 16, function(t)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
