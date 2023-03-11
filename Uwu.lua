@@ -27,7 +27,6 @@ local MainFunctions = MainTab:AddSection({
 MainFunctions:AddButton({
     Name = "Auto Swing",
     Save = true,
-    Flag = "AutoSwing",
     Callback = function()
         if _G.swing == true then
             _G.swing = false
@@ -56,6 +55,24 @@ SettingsSection:AddButton({
     Name = "Destroy UI",
     Callback = function()
         OrionLib:Destroy()
+    end
+})
+
+SettingsSection:AddBind({
+    Name = "Toggle Visibility",
+    Default = Enum.KeyCode.LeftAlt,
+    Save = true,
+    Flag = "VisibilityToggle",
+    Callback = function()
+        local gui1 = game.CoreGui.Orion.Frame
+        local gui2 = game.CoreGui.Orion.Frame
+        if gui1.Visible == true and gui2.Visible == true then
+            gui1.Visible = false
+            gui2.Visible = false
+        else
+            gui1.Visible = true
+            gui2.Visible = true
+        end
     end
 })
 
