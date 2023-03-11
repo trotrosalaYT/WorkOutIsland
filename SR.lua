@@ -21,7 +21,7 @@ local ew4 = eggs:Channel("World 4 Eggs")
 
 local ew5 = eggs:Channel("World 5 Eggs")
 
-local ew6 = eggs:CHannel("World 6 Eggs")
+local ew6 = eggs:Channel("World 6 Eggs")
 
 local misc = SettingsTab:Channel("Settings/Binds")
 
