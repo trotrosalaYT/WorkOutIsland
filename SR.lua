@@ -59,6 +59,60 @@ buttons:Toggle("Auto Coins", false, function(bool)
         local A_6 = 6
         local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
         Event:InvokeServer(A_6)
+        local A_7 = 7
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_7)
+        local A_8 = 8
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_8)
+        local A_9 = 9
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_9)
+        local A_10 = 10
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_10)
+        local A_11 = 11
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_11)
+        local A_12 = 12
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_12)
+        local A_13 = 13
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_13)
+        local A_14 = 14
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_14)
+        local A_15 = 15
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_15)
+        local A_16 = 16
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_16)
+        local A_17 = 17
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_17)
+        local A_18 = 18
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_18)
+        local A_19 = 19
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_19)
+        local A_20 = 20
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_20)
+        local A_21 = 21
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_21)
+        local A_22 = 22
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_22)
+        local A_23 = 23
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_23)
+        local A_24 = 24
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_24)
     end
 end)
 
