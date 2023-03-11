@@ -16,7 +16,7 @@ local Window = OrionLib:MakeWindow({
 
 local MainTab = Window:MakeTab({
     Name = "Main",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://11931487933",
     PremiumOnly = false
 })
 
@@ -87,18 +87,34 @@ MainFunctions:AddButton({
     end
 })
 
-MainFunctions:AddSlider({
-    Name = "Jump Power",
-    Min = 30,
-    Max = 250,
-    Default = 50,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 5,
-    ValueName = "JumpPower",
-    Save = true,
-    Flag = "JumpPower",
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+MainFunctions:AddButton({
+    Name = "Super Jump",
+    Callback = function()
+        if _G.jump == true then
+            _G.jump = false
+            OrionLib:MakeNotification({
+                Name = "Super Jump disabled",
+                Context = "Click again to enable Super Jump",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        else
+            _G.jump = true
+            OrionLib:MakeNotification({
+                Name = "Super Jump enabled",
+                Context = "Click again to disable Super Jump",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+        while _G.jump do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
+        end
+        while _G.jump == false do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
+        end
     end
 })
 
@@ -185,6 +201,40 @@ SettingsSection:AddBind({
         end
     end
 
+})
+
+SettingsSection:AddBind({
+    Name = "Super Speed",
+    Default = Enum.KeyCode.H,
+    Save = true,
+    Flag = "SuperJump",
+    Callback = function()
+        if _G.jump == true then
+            _G.jump = false
+            OrionLib:MakeNotification({
+                Name = "Super Jump disabled",
+                Context = "Press " .. Enum.KeyCode.Name .. " again to enable Super Jump",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        else
+            _G.jump = true
+            OrionLib:MakeNotification({
+                Name = "Super Jump enabled",
+                Context = "Press " .. Enum.KeyCode.Name .. " again to disable Super Jump",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+        while _G.jump do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
+        end
+        while _G.jump == false do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
+        end
+    end
 })
 
 OrionLib:Init()
