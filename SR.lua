@@ -42,6 +42,21 @@ buttons:Toggle("Auto Coins", false, function(bool)
         local A_1 = 1
         local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
         Event:InvokeServer(A_1)
+        local A_2 = 2
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_2)
+        local A_3 = 3
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_3)
+        local A_4 = 4
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_4)
+        local A_5 = 5
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_5)
+        local A_6 = 6
+        local Event = game:GetService("ReplicatedStorage").Remotes["RF_WeaponDraw"]
+        Event:InvokeServer(A_6)
     end
 end)
 
