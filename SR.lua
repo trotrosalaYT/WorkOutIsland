@@ -34,8 +34,10 @@ local tps = main:Channel("World Teleports")
 buttons:Toggle("Auto Coins", false, function(bool)
     if bool == true then
         _G.coins = true
+        DiscordLib:Notification("Enabled", "If it's not working yet, hop in a race once for it to work", "Alright")
     else
         _G.coins = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.coins do
         wait()
@@ -65,8 +67,11 @@ buttons:Seperator()
 buttons:Toggle("Auto Rebirth", false, function(bool)
     if bool == true then
         _G.reb = true
+        DiscordLib:Notification("Enabled",
+            "If you haven't, enable Auto Coins with this and then sit back and relax, go get a drink or food", "Alright")
     else
         _G.reb = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.reb do
         wait()
@@ -80,15 +85,29 @@ buttons:Seperator()
 buttons:Toggle("God Speed", false, function(bool)
     if bool == true then
         _G.Speed = true
+        DiscordLib:Notification("Enabled", "Speed go brr.....", "Alright")
     else
         _G.Speed = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.Speed do
         wait()
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
     end
     if _G.Speed == false then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+    end
+end)
+
+buttons:Seperator()
+
+buttons:Toggle("Noclip", false, function(bool)
+    if bool == true then
+        _G.Clip = true
+        DiscordLib:Notification("Enabled", "You can walk through walls now, amazing", "Alright")
+    else
+        _G.Clip = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
 end)
 
@@ -119,7 +138,7 @@ misc2:Button("Anti Afk", function()
         end)
         _G.t = true
     else
-        DiscordLib:Notification("Already enabled", "", "Alright")
+        DiscordLib:Notification("Already enabled", "You can afk already, no need to click it again", "Alright")
     end
 end)
 
@@ -131,15 +150,18 @@ misc2:Button("Give VIP Area Access", function()
         game.Workspace.WorldMain.Vip:Destroy()
         _G.f = true
     else
-        DiscordLib:Notification("Already Destroyed", "You can enter the VIP Area already", "Alright")
+        DiscordLib:Notification("Already Destroyed", "You can enter the VIP Area already, no need to click it again",
+            "Alright")
     end
 end)
 
 ew1:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O1 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O1 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O1 do
         wait()
@@ -156,8 +178,10 @@ ew1:Seperator()
 ew1:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O2 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O2 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O2 do
         wait()
@@ -174,8 +198,10 @@ ew1:Seperator()
 ew1:Toggle("Auto Open Third Egg", false, function(bool)
     if bool == true then
         _G.O3 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O3 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O3 do
         wait()
@@ -190,8 +216,10 @@ end)
 ew2:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O4 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O4 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O4 do
         wait()
@@ -208,8 +236,10 @@ ew2:Seperator()
 ew2:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O5 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O5 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O5 do
         wait()
@@ -224,8 +254,10 @@ end)
 ew3:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O6 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O6 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O6 do
         wait()
@@ -242,8 +274,10 @@ ew3:Seperator()
 ew3:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O7 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O7 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O7 do
         wait()
@@ -258,8 +292,10 @@ end)
 ew4:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O8 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O8 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O8 do
         wait()
@@ -276,8 +312,10 @@ ew4:Seperator()
 ew4:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O9 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O9 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O9 do
         wait()
@@ -292,8 +330,10 @@ end)
 ew5:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O10 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O10 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O10 do
         wait()
@@ -310,8 +350,10 @@ ew5:Seperator()
 ew5:Toggle("Auto Open Second Egg", false, function(bool)
     if bool == true then
         _G.O11 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O11 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O11 do
         wait()
@@ -326,8 +368,10 @@ end)
 ew6:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O12 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O12 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O12 do
         wait()
@@ -344,8 +388,10 @@ ew6:Seperator()
 ew6:Toggle("Auto Open First Egg", false, function(bool)
     if bool == true then
         _G.O13 = true
+        DiscordLib:Notification("Enabled", "Automatically hatches for you...", "Alright")
     else
         _G.O13 = false
+        DiscordLib:Notification("Disabled", "Click me again to enable", "Alright")
     end
     while _G.O13 do
         wait()
@@ -358,7 +404,7 @@ ew6:Toggle("Auto Open First Egg", false, function(bool)
 end)
 
 tps:Button("Teleport to World 1", function()
-    DiscordLib:Notification("Successfully teleported", "", "Okay")
+    DiscordLib:Notification("Successfully teleported", "This is the starter world, what are you doing here", "Okay")
     local A_1 = "World001"
     local Event = game:GetService("ReplicatedStorage").Remotes["RE_Teleport"]
     Event:FireServer(A_1)
