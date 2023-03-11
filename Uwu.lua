@@ -41,6 +41,28 @@ MainFunctions:AddButton({
     end
 })
 
+MainFunctions:AddButton({
+    Name = "God Speed",
+    Save = true,
+    Callback = function()
+        if _G.zoom == true then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+            _G.zoom = false
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+            _G.zoom = true
+        end
+        while _G.zoom do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+        end
+        while _G.zoom == false do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+        end
+    end
+})
+
 local SettingsTab = Window:MakeTab({
     Name = "Settings",
     Icon = "rbxassetid://4483345998",
@@ -75,6 +97,31 @@ SettingsSection:AddBind({
             Event:InvokeServer()
         end
     end
+})
+
+SettingsSection:AddBind({
+    Name = "God Speed",
+    Default = Enum.KeyCode.E,
+    Save = true,
+    Flag = "SpeedToggle",
+    Callback = function()
+        if _G.zoom == true then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+            _G.zoom = false
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+            _G.zoom = true
+        end
+        while _G.zoom do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+        end
+        while _G.zoom == false do
+            wait()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+        end
+    end
+
 })
 
 OrionLib:Init()
