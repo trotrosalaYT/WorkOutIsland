@@ -108,10 +108,12 @@ misc2:Button("Anti Afk", function()
     end
 end)
 
+misc2:Seperator()
+
 misc2:Button("Give VIP Area Access", function()
     if _G.f == false then
         DiscordLib:Notification("Destroyed", "You can now enter the VIP Area", "Alright")
-        game.Workspace.WorldMain.VIP:Destroy()
+        game.Workspace.WorldMain.Vip:Destroy()
         _G.f = true
     else
         DiscordLib:Notification("Already Destroyed", "You can enter the VIP Area already", "Alright")
