@@ -1,49 +1,46 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+-- Required for Toggle to work
+local function Toggled()
+    if true then
+        wait()
+    end
+end
 
-OrionLib:MakeNotification({
-    Name = "Uwu Hub",
-    Content = "Welcome To Uwu Hub! Have Fun!",
-    Image = "rbxassetid://4483345998",
-    Time = 1
+local Window = Lib:CreateWindow({
+    Name = "Uwu hub",
+    LoadingTitle = "Sword Fighters Simulator Hub",
+    LoadingSubtitle = "by Trot",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "UwuHub",
+        FileName = "Config"
+    },
+    KeySystem = false, -- Set this to true to use their key system
+    KeySettings = {
+        Title = "Uwu Hub",
+        Subtitle = "Key System",
+        Note = "Hi Uwu cool",
+        SaveKey = true,
+        Key = "1"
+    }
 })
 
-local Window = OrionLib:MakeWindow({
-    Name = "Sword Fighters Simulator",
-    HidePremium = false,
-    SaveConfig = true,
-    ConfigFolder = "UwuSaves"
-})
+local main = Window:CreateTab("Main Functions", 4483362458)
 
-local MainTab = Window:MakeTab({
-    Name = "Main",
-    Icon = "rbxassetid://11931487933",
-    PremiumOnly = false
-})
+local misc = Window:CreateTab("Settings/Misc", 4483362458)
 
-local MainFunctions = MainTab:AddSection({
-    Name = "Main Functions"
-})
-
-MainFunctions:AddButton({
+local AutoSwing = main:CreateToggle({
     Name = "Auto Swing",
-    Save = true,
-    Callback = function()
-        if _G.swing == true then
-            _G.swing = false
-            OrionLib:MakeNotification({
-                Name = "Auto Swing disabled",
-                Content = "Click again to enable Auto Swing",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        else
+    CurrentValue = false,
+    Flag = "AutoSwing",
+    Callback = function(Value)
+        Toggled(Value)
+        if Value == true then
             _G.swing = true
-            OrionLib:MakeNotification({
-                Name = "Auto Swing enabled",
-                Content = "Click again to disable Auto Swing",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            Lib:Notify("Auto Swing enabled", "Click again to disable Auto Swing", 4483362458)
+        else
+            _G.swing = false
+            Lib:Notify("Auto Swing disabled", "Click again to enable Auto Swing", 4483362458)
         end
         while _G.swing do
             wait()
@@ -53,188 +50,102 @@ MainFunctions:AddButton({
     end
 })
 
-MainFunctions:AddButton({
-    Name = "God Speed",
-    Save = true,
-    Callback = function()
-        if _G.zoom == true then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-            _G.zoom = false
-            OrionLib:MakeNotification({
-                Name = "God speed disabled",
-                Content = "Click again to enable God speed",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+local Speed = main:CreateToggle({
+    Name = "God speed",
+    CurrentValue = false,
+    Flag = "Speed",
+    Callback = function(Value)
+        Toggled(Value)
+        if Value == true then
             _G.zoom = true
-            OrionLib:MakeNotification({
-                Name = "God speed enabled",
-                Content = "Click again to disable God speed",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            Lib:Notify("God speed enabled", "Click again to disable God speed", 4483362458)
+        else
+            _G.zoom = false
+            Lib:Notify("God speed disabled", "Click again to enable God speed", 4483362458)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
         end
         while _G.zoom do
             wait()
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
         end
-        while _G.zoom == false do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
-        end
     end
 })
 
-MainFunctions:AddButton({
+local Jump = main:CreateToggle({
     Name = "Super Jump",
-    Callback = function()
-        if _G.jump == true then
-            _G.jump = false
-            OrionLib:MakeNotification({
-                Name = "Super Jump disabled",
-                Context = "Click again to enable Super Jump",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        else
+    CurrentValue = false,
+    Flag = "SuperJump",
+    Callback = function(Value)
+        Toggled(Value)
+        if Value == true then
             _G.jump = true
-            OrionLib:MakeNotification({
-                Name = "Super Jump enabled",
-                Context = "Click again to disable Super Jump",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            Lib:Notify("Super Jump enabled", "Click again to disable Super Jump", 4483362458)
+        else
+            _G.jump = false
+            Lib:Notify("Super Jump disabled", "Click again to enable Super Jump", 4483362458)
+            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
         end
         while _G.jump do
             wait()
             game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
         end
-        while _G.jump == false do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
-        end
     end
 })
 
-local SettingsTab = Window:MakeTab({
-    Name = "Settings",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local SettingsSection = SettingsTab:AddSection({
-    Name = "Settings"
-})
-
-SettingsSection:AddButton({
-    Name = "Destroy UI",
+local Destroy = misc:CreateButton({
+    Name = "Destroy Gui",
     Callback = function()
-        OrionLib:Destroy()
+        AutoSwing:Set(false)
+        Speed:Set(false)
+        Jump:Set(false)
+        Lib:Destroy()
     end
 })
 
-SettingsSection:AddBind({
-    Name = "Toggle Auto Swing",
-    Default = Enum.KeyCode.G,
-    Save = true,
-    Flag = "AutoSwingToggle",
-    Callback = function()
+local SwingBind = misc:CreateKeybind({
+    Name = "Auto Swing Bind",
+    CurrentKeybind = "G",
+    HoldToInteract = false,
+    Flag = "AutoSwingBind",
+    Callback = function(Keybind)
         if _G.swing == true then
             _G.swing = false
-            OrionLib:MakeNotification({
-                Name = "Auto Swing disabled",
-                Content = "Press " .. Enum.KeyCode.Name .. " again to enable Auto Swing",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            AutoSwing:Set(false)
         else
             _G.swing = true
-            OrionLib:MakeNotification({
-                Name = "Auto Swing enabled",
-                Content = "Press " .. Enum.KeyCode.Name .. " again to disable Auto Swing",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        end
-        while _G.swing do
-            wait()
-            local Event = game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click
-            Event:InvokeServer()
+            AutoSwing:Set(true)
         end
     end
 })
 
-SettingsSection:AddBind({
-    Name = "God Speed",
-    Default = Enum.KeyCode.E,
-    Save = true,
-    Flag = "SpeedToggle",
-    Callback = function()
+local SpeedBind = misc:CreateKeybind({
+    Name = "God Speed Bind",
+    CurrentKeybind = "C",
+    HoldToInteract = false,
+    Flag = "GodSpeedBind",
+    Callback = function(Keybind)
         if _G.zoom == true then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
             _G.zoom = false
-            OrionLib:MakeNotification({
-                Name = "God speed disabled",
-                Content = "Press " .. Enum.KeyCode.Name .. " again to enable God speed",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            Speed:Set(false)
         else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
             _G.zoom = true
-            OrionLib:MakeNotification({
-                Name = "God speed enabled",
-                Content = "Press " .. Enum.KeyCode.Name .. "again to disable God speed",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        end
-        while _G.zoom do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-        end
-        while _G.zoom == false do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+            Speed:Set(true)
         end
     end
-
 })
 
-SettingsSection:AddBind({
-    Name = "Super Speed",
-    Default = Enum.KeyCode.H,
-    Save = true,
-    Flag = "SuperJump",
-    Callback = function()
+local JumpBind = misc:CreateKeybind({
+    Name = "Super Jump Bind",
+    CurrentKeybind = "H",
+    HoldToInteract = false,
+    Flag = "SuperJumpBind",
+    Callback = function(Keybind)
         if _G.jump == true then
             _G.jump = false
-            OrionLib:MakeNotification({
-                Name = "Super Jump disabled",
-                Context = "Press " .. Enum.KeyCode.Name .. " again to enable Super Jump",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
+            Jump:Set(false)
         else
             _G.jump = true
-            OrionLib:MakeNotification({
-                Name = "Super Jump enabled",
-                Context = "Press " .. Enum.KeyCode.Name .. " again to disable Super Jump",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        end
-        while _G.jump do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
-        end
-        while _G.jump == false do
-            wait()
-            game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
+            Jump:Set(true)
         end
     end
 })
-
-OrionLib:Init()
