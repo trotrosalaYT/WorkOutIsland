@@ -76,6 +76,13 @@ local AutoFarmG = main:CreateToggle({
     end
 })
 
+local TP = main:CreateButton({
+    Name = "TP to best world",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Worlds.World10.CFrame
+    end
+})
+
 local destroy = misc:CreateButton({
     Name = "Destroy",
     Callback = function()
