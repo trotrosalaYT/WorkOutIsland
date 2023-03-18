@@ -34,28 +34,25 @@ local AutoFarmB = main:CreateToggle({
         end
         while _G.farm do
             task.wait()
-            local A_1 = game:GetService("Workspace").Bosses.BB5.Humanoid
+            local A_1 = game.Workspace.Bosses.BB5.Humanoid
             local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
             Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB6.Humanoid
+            local A_1 = game.Workspace.Bosses.BB6.Humanoid
             local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
             Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB4.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.DemonB1.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB2.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB3.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB1.Humanoid
+            local A_1 = game.Workspace.Bosses.BB4.Humanoid
             local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
             Event:InvokeServer(A_1)
         end
+        local A_1 = game.Workspace.Bosses.BB5.Humanoid
+        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+        Event:InvokeServer(A_1)
+        local A_1 = game.Workspace.Bosses.BB6.Humanoid
+        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+        Event:InvokeServer(A_1)
+        local A_1 = game.Workspace.Bosses.BB4.Humanoid
+        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+        Event:InvokeServer(A_1)
     end
 })
 
@@ -72,25 +69,7 @@ local AutoFarmG = main:CreateToggle({
         end
         while _G.Farm2 do
             task.wait()
-            local A_1 = game:GetService("Workspace").Bosses.BB5.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB6.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB4.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.DemonB1.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB2.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB3.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game:GetService("Workspace").Bosses.BB1.Humanoid
+            local A_1 = game.Workspace.Bosses.BB5.Humanoid
             local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
             Event:InvokeServer(A_1)
         end
