@@ -16,7 +16,14 @@ local Window = Lib:CreateWindow({
         FolderName = "UwuHub",
         FileName = "ConfigGL"
     },
-    KeySystem = false
+    KeySystem = true,
+    KeySettings = {
+        Title = "Uwu Hub",
+        Subtitle = "Key System",
+        Note = "Hi Uwu cool",
+        SaveKey = true,
+        Key = "GodlyLifters"
+    }
 })
 
 local main = Window:CreateTab("Main Functions", 4483362458)
