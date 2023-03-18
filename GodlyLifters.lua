@@ -1,3 +1,4 @@
+local Workspace = game:GetService("Workspace")
 local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 -- Required for Toggle to work
 local function Toggled()
@@ -27,32 +28,35 @@ local AutoFarmB = main:CreateToggle({
     Flag = "AutoBoss",
     Callback = function(Value)
         Toggled(Value)
-        if Value == true then
-            _G.Farm = true
-        else
-            _G.Farm = false
+        if game.Players.LocalPlayer.Character:FindFirstChild("Stomp") and Value == true then
+            while true do
+                task.wait()
+                local A_1 = game.Workspace.Bosses.BB5.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB6.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB4.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.DemonB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.AngelB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB3.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB2.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
+                Event:InvokeServer(A_1)
+            end
         end
-        while _G.farm do
-            task.wait()
-            local A_1 = game.Workspace.Bosses.BB5.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game.Workspace.Bosses.BB6.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-            local A_1 = game.Workspace.Bosses.BB4.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-            Event:InvokeServer(A_1)
-        end
-        local A_1 = game.Workspace.Bosses.BB5.Humanoid
-        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-        Event:InvokeServer(A_1)
-        local A_1 = game.Workspace.Bosses.BB6.Humanoid
-        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-        Event:InvokeServer(A_1)
-        local A_1 = game.Workspace.Bosses.BB4.Humanoid
-        local Event = game.Players.LocalPlayer.Character.Stomp.StompClient.Attack
-        Event:InvokeServer(A_1)
     end
 })
 
@@ -62,16 +66,34 @@ local AutoFarmG = main:CreateToggle({
     Flag = "AutoBoss2",
     Callback = function(Value)
         Toggled(Value)
-        if Value == true then
-            _G.Farm2 = true
-        else
-            _G.Farm2 = false
-        end
-        while _G.Farm2 do
-            task.wait()
-            local A_1 = game.Workspace.Bosses.BB5.Humanoid
-            local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
-            Event:InvokeServer(A_1)
+        if game.Players.LocalPlayer.Character:FindFirstChild("Punch") and Value == true then
+            while true do
+                task.wait()
+                local A_1 = game.Workspace.Bosses.BB5.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB6.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB4.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.DemonB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.AngelB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB3.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB2.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+                local A_1 = game.Workspace.Bosses.BB1.Humanoid
+                local Event = game.Players.LocalPlayer.Character.Punch.PunchClient.Attack
+                Event:InvokeServer(A_1)
+            end
         end
     end
 })
