@@ -22,6 +22,26 @@ local Window = Lib:CreateWindow({
 local main = Window:CreateTab("Main Functions", 4483362458)
 local misc = Window:CreateTab("Settings/Misc",4483362458)
 
+local AutoLift = main:CreateToggle({
+    Name = "Auto Lift",
+    CurrentValue = false,
+    Flag = "AutoLift",
+    Callback = function(Value)
+        Toggled(Value)
+        if Value == true then
+            _G.lift = true
+        else
+            _G.lift = false
+        end
+        while _G.lift do
+            wait()
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+            end
+        end
+    end
+})
+
 local AutoFarmB = main:CreateToggle({
     Name = "Auto Farm Bosses (Gives Bad fame and blood)",
     CurrentValue = false,
