@@ -135,6 +135,7 @@ local TP = main:CreateButton({
 local destroy = misc:CreateButton({
     Name = "Destroy",
     Callback = function()
+        AutoLift:Set(false)
         AutoFarmB:Set(false)
         AutoFarmG:Set(false)
         Lib:Destroy()
