@@ -1,4 +1,3 @@
-
 local Workspace = game:GetService("Workspace")
 local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 -- Required for Toggle to work
