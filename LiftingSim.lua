@@ -94,6 +94,7 @@ local Destroy = misc:CreateButton({
         AutoLift:Set(false)
         FastLift:Set(false)
         Lib:Destroy()
+    end
 })
 
 local vu = game:GetService("VirtualUser")
