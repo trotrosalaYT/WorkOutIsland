@@ -22,7 +22,7 @@ local Window = Lib:CreateWindow({
         Subtitle = "Key System",
         Note = "Hi Uwu cool",
         SaveKey = true,
-        Key = "GodlyLifters"
+        Key = "UwuHub"
     }
 })
 
