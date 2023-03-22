@@ -9,7 +9,7 @@ end
 
 local Window = Lib:CreateWindow({
     Name = "Uwu hub",
-    LoadingTitle = "Godly Lifters",
+    LoadingTitle = "Lifting simulator",
     LoadingSubtitle = "by Trot",
     ConfigurationSaving = {
         Enabled = true,
