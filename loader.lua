@@ -13,3 +13,6 @@ end
 if game.PlaceId == 11455876520 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wedonttalkaboutbrun/scripts/main/SL.lua"))()
 end
+if game.PlaceId == 4032944086 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wedonttalkaboutbrun/scripts/main/GetHuge.lua"))()
+end
